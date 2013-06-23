@@ -1,4 +1,13 @@
 #
+function waiting {
+    a=1
+    sp="/-\|"
+    echo -n ' '
+    while true
+    do
+        printf "\b${sp:a++%${#sp}:1}"
+    done
+}
 function finger {
     i=0
     while [ "$i" -lt 5 ]    # this is loop1

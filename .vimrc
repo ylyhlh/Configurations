@@ -78,6 +78,13 @@ set list
 " Highlight Search
 set hlsearch
 
+""""""""""""""""""""""""""""""
+" => Tablines color
+""""""""""""""""""""""""""""""
+set showtabline=1
+hi Title ctermfg=white ctermbg=Gray 
+hi TabLine ctermfg=LightGray ctermbg=Gray
+hi TabLineSel ctermfg=Magenta ctermbg=Black
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

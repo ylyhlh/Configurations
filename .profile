@@ -1,4 +1,4 @@
-###################################################################################################################
+##############################
 # MacPorts Installer addition on 2012-11-08_at_22:35:30: adding an appropriate PATH variable for use with MacPorts.
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH:/Applications/MATLAB_R2012a.app/bin/
@@ -52,7 +52,7 @@ alias sshhpc='ssh hl1283@hpc.nyu.edu'
 if [ -f ~/.dances ]; then
     source ~/.dances
 fi
-######################################################################################
+#############################
 # colorized prompt
 if [ -x /usr/bin/tput ] && tput setaf 1 >& /dev/null; then
   # we have color support
@@ -122,9 +122,14 @@ function timer_stop {
 
 trap 'timer_start' DEBUG
 PROMPT_COMMAND=timer_stop
+
+#The git support to check the status of repo
 function git_char {
+    #The branch
     BRC=`git branch 2>/dev/null | grep ^* | sed -e "s/*//"`
+    #Whether modified 
     MODI=`git status 2>/dev/null | grep "Changes not staged for commit:"| wc -l`
+    #Whether commit the staged files
     CMT=`git status 2>/dev/null | grep "Changes to be committed:"| wc -l`
     if [ "$BRC" == "" ]; then
         echo -n "${MAG} No ✈ ❡ї✞ ${GRN}☝ "
@@ -142,11 +147,16 @@ function git_char {
         echo -n "✌"
     fi
 }
-
-export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${GRN}] ${RST}☤ℵ ${BLU}\w${RST} $(git_char)${RED}\n${BLD}${GRN}\[\033[;32m\] ☞ \[\033[0;36m\]${RST}'
+#Another git: ᘐ ᓮ ☂ 
+export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${GRN}] ${RST}☤ℵ ${BLU}\w $(git_char) \n${BLD}${GRN} ☞ ${RST} '
 #export PS1='$(seperator)\n${debian_chroot:+($debian_chroot)}${GRN}${BLD}[${RST}\[\033[00;36m\]\u\[\033[00;31m\]@\[\033[00;36m\]\h\[\033[00;33m\]${GRN}${BLD}]${RST}:\[\033[00;31m\]\w\[\033[00m\]\n${BLD}${GRN}➳  ${RST}'$
 
-#change the PS1 to no bar
+#toggle the PS1 w/wo bar
 NOBAR=1
-alias nobar_hao="NOBAR=1"
-alias bar_hao="NOBAR=0"
+function ∫bar_hao {
+    if [[ $NOBAR -eq 0 ]]; then
+        NOBAR=1
+    else
+        NOBAR=0
+    fi
+}
