@@ -127,10 +127,10 @@ function git_char {
     MODI=`git status 2>/dev/null | grep "Changes not staged for commit:"| wc -l`
     CMT=`git status 2>/dev/null | grep "Changes to be committed:"| wc -l`
     if [ "$BRC" == "" ]; then
-        echo -n "${MAG} No ✈ ❡ї✞"
+        echo -n "${MAG} No ✈ ❡ї✞ ${GRN}☝ "
         return
     fi
-    echo -n "${MAG} ✈ ❡ї✞ ${RST}on${RED}$BRC ${GRN}"
+    echo -n "${MAG} ✈ ❡ї✞ ${RST}☺ℵ${RED}$BRC ${GRN}"
     if [ "$MODI" -ne "0" ]; then 
         echo -n "✍ "
     else
@@ -143,7 +143,7 @@ function git_char {
     fi
 }
 
-export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${GRN}] ${RST}in ${BLU}\w${RST} $(git_char)${RED}\n${BLD}${GRN}\[\033[;32m\] ➳ \[\033[0;36m\]${RST}'
+export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${GRN}] ${RST}☤ℵ ${BLU}\w${RST} $(git_char)${RED}\n${BLD}${GRN}\[\033[;32m\] ☞ \[\033[0;36m\]${RST}'
 #export PS1='$(seperator)\n${debian_chroot:+($debian_chroot)}${GRN}${BLD}[${RST}\[\033[00;36m\]\u\[\033[00;31m\]@\[\033[00;36m\]\h\[\033[00;33m\]${GRN}${BLD}]${RST}:\[\033[00;31m\]\w\[\033[00m\]\n${BLD}${GRN}➳  ${RST}'$
 
 #change the PS1 to no bar
