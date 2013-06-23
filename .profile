@@ -1,5 +1,4 @@
 ###################################################################################################################
-
 # MacPorts Installer addition on 2012-11-08_at_22:35:30: adding an appropriate PATH variable for use with MacPorts.
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH:/Applications/MATLAB_R2012a.app/bin/
