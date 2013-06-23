@@ -147,6 +147,6 @@ export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${
 #export PS1='$(seperator)\n${debian_chroot:+($debian_chroot)}${GRN}${BLD}[${RST}\[\033[00;36m\]\u\[\033[00;31m\]@\[\033[00;36m\]\h\[\033[00;33m\]${GRN}${BLD}]${RST}:\[\033[00;31m\]\w\[\033[00m\]\n${BLD}${GRN}➳  ${RST}'$
 
 #change the PS1 to no bar
-export NOBAR=1
-alias nobar_hao="export NOBAR=1"
-alias bar_hao="export NOBAR=0"
+NOBAR=1
+alias nobar_hao="NOBAR=1"
+alias bar_hao="NOBAR=0"
