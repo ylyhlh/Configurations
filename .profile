@@ -1,35 +1,24 @@
-##############################
-# MacPorts Installer addition on 2012-11-08_at_22:35:30: adding an appropriate PATH variable for use with MacPorts.
-
+#############################
+#Various ENVs
+#############################
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH:/Applications/MATLAB_R2012a.app/bin/
-# Finished adapting your PATH environment variable for use with MacPorts.
 DYLD_FALLBACK_LIBRARY_PATH=${macports_prefix}/lib 
-
-##
-# Your previous /Users/liuhao/.profile file was backed up as /Users/liuhao/.profile.macports-saved_2013-05-02_at_00:21:51
-##
-
-# MacPorts Installer addition on 2013-05-02_at_00:21:51: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/Users/liuhao/anaconda/bin:$PATH
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-
-#Some system alias
-alias ll='ls -l'
-alias rm='rm -i'
-export CLICOLOR=1
 
 # added by Anaconda 1.5.1 installer
 export PATH="/Users/liuhao/anaconda/bin:$PATH"
+export PATH=/Users/liuhao/anaconda/bin:$PATH
 
 #Cuda path
 export PATH=/Developer/NVIDIA/CUDA-5.0/bin/:$PATH
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.0/lib:$DYLD_LIBRARY_PATH
-# Added by Canopy installer on 2013-06-11
-# VIRTUAL_ENV_DISABLE_PROMPT can be '' to make bashprompt show that Canopy is active, otherwise 1
-# VIRTUAL_ENV_DISABLE_PROMPT=1 source /Users/liuhao/Library/Enthought/Canopy_32bit/User/bin/activate
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
+#Some system alias
+alias ll='ls -l'
+alias rm='rm -i'
+
+#ls output color
+export CLICOLOR=1
 
 # bash-completion
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
@@ -43,17 +32,26 @@ export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
 export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
-#cognical login
+#############################
+#SSH setup
+#############################
+#Cognical login
 alias sshnc='ssh -i ~/.ec2/ec2-keypair.pem ubuntu@ec2-23-21-157-18.compute-1.amazonaws.com'
 alias sshnc2='ssh -i ~/.ec2/ec2-keypair.pem ubuntu@ec2-23-23-116-178.compute-1.amazonaws.com'
 
 #hpc login
 alias sshhpc='ssh hl1283@hpc.nyu.edu'
+
+#############################
+#The extent files
+#############################
 if [ -f ~/.dances ]; then
     source ~/.dances
 fi
+
 #############################
 # colorized prompt
+#############################
 if [ -x /usr/bin/tput ] && tput setaf 1 >& /dev/null; then
   # we have color support
   color_prompt=yes
@@ -131,6 +129,8 @@ function git_char {
     MODI=`git status 2>/dev/null | grep "Changes not staged for commit:"| wc -l`
     #Whether commit the staged files
     CMT=`git status 2>/dev/null | grep "Changes to be committed:"| wc -l`
+    UNTF=`git status 2>/dev/null | grep "Untracked files:"| wc -l`
+    
     if [ "$BRC" == "" ]; then
         echo -n "${MAG} No ✈ ❡ї✞ ${GRN}☝ "
         return
@@ -146,9 +146,13 @@ function git_char {
     else
         echo -n "✌"
     fi
+    if [ "$UNTF" -ne "0" ]; then
+        echo -n " ${RED}+"
+    fi
 }
+
 #Another git: ᘐ ᓮ ☂ 
-export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${GRN}] ${RST}☤ℵ ${BLU}\w $(git_char) \n${BLD}${GRN} ☞ ${RST} '
+export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${GRN}] ${RST}☤ℵ ${BLU}\w $(git_char)\n ${BLD}${GRN} ☞ ${RST} '
 #export PS1='$(seperator)\n${debian_chroot:+($debian_chroot)}${GRN}${BLD}[${RST}\[\033[00;36m\]\u\[\033[00;31m\]@\[\033[00;36m\]\h\[\033[00;33m\]${GRN}${BLD}]${RST}:\[\033[00;31m\]\w\[\033[00m\]\n${BLD}${GRN}➳  ${RST}'$
 
 #toggle the PS1 w/wo bar

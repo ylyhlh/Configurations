@@ -1,3 +1,4 @@
+set ttyfast
 let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
 if has("mouse")
     set mouse=a
