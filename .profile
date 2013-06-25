@@ -16,6 +16,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 #Some system alias
 alias ll='ls -l'
 alias rm='rm -i'
+alias grep='grep --color=auto'
 
 #ls output color
 export CLICOLOR=1
@@ -157,7 +158,7 @@ export PS1='$(seperator)${BLD}${GRN}[${RST}${CYN}\u${RST}@${CYN}\h${RST}${BLD}${
 
 #toggle the PS1 w/wo bar
 NOBAR=1
-function ∫bar_hao {
+function bar_hao {
     if [[ $NOBAR -eq 0 ]]; then
         NOBAR=1
     else
