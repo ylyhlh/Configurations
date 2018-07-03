@@ -5,6 +5,60 @@
   <subtitle>Confluence Syndication Feed</subtitle>
   <id>https://enterprise-confluence.aexp.com/confluence</id>
   <entry>
+    <title>ert</title>
+    <link rel="alternate" href="https://enterprise-confluence.aexp.com/confluence/display/GCCAS/2018/07/03/ert" />
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <id>tag:enterprise-confluence.aexp.com,2009:blogpost-190528205-1</id>
+    <updated>2018-07-03T19:08:29Z</updated>
+    <published>2018-07-03T19:08:29Z</published>
+    <summary type="html">&lt;div class="feed"&gt;    &lt;p&gt;
+        Blog post
+            &lt;b&gt;added&lt;/b&gt; by
+                    &lt;a href="    https://enterprise-confluence.aexp.com/confluence/display/~hliu11
+"&gt;Hao Liu&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px;"&gt;
+        &lt;p&gt;erte&lt;/p&gt;
+    &lt;/div&gt;
+        &lt;div style="padding: 10px 0;"&gt;
+       &lt;a href="https://enterprise-confluence.aexp.com/confluence/display/GCCAS/2018/07/03/ert"&gt;View Online&lt;/a&gt;
+                     &amp;middot;
+       &lt;a href="https://enterprise-confluence.aexp.com/confluence/display/GCCAS/2018/07/03/ert?showComments=true&amp;showCommentArea=true#addcomment"&gt;Add Comment&lt;/a&gt;
+           &lt;/div&gt;
+&lt;/div&gt;</summary>
+    <dc:creator>Hao Liu</dc:creator>
+    <dc:date>2018-07-03T19:08:29Z</dc:date>
+  </entry>
+  <entry>
+    <title>sdf</title>
+    <link rel="alternate" href="https://enterprise-confluence.aexp.com/confluence/display/GCCAS/2018/07/03/sdf" />
+    <author>
+      <name>Hao Liu</name>
+    </author>
+    <id>tag:enterprise-confluence.aexp.com,2009:blogpost-190527864-1</id>
+    <updated>2018-07-03T18:34:15Z</updated>
+    <published>2018-07-03T18:34:15Z</published>
+    <summary type="html">&lt;div class="feed"&gt;    &lt;p&gt;
+        Blog post
+            &lt;b&gt;added&lt;/b&gt; by
+                    &lt;a href="    https://enterprise-confluence.aexp.com/confluence/display/~hliu11
+"&gt;Hao Liu&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px;"&gt;
+        &lt;p&gt;sdfs&lt;/p&gt;
+    &lt;/div&gt;
+        &lt;div style="padding: 10px 0;"&gt;
+       &lt;a href="https://enterprise-confluence.aexp.com/confluence/display/GCCAS/2018/07/03/sdf"&gt;View Online&lt;/a&gt;
+                     &amp;middot;
+       &lt;a href="https://enterprise-confluence.aexp.com/confluence/display/GCCAS/2018/07/03/sdf?showComments=true&amp;showCommentArea=true#addcomment"&gt;Add Comment&lt;/a&gt;
+           &lt;/div&gt;
+&lt;/div&gt;</summary>
+    <dc:creator>Hao Liu</dc:creator>
+    <dc:date>2018-07-03T18:34:15Z</dc:date>
+  </entry>
+  <entry>
     <title>345</title>
     <link rel="alternate" href="https://enterprise-confluence.aexp.com/confluence/display/GCCAS/2018/06/28/345" />
     <author>
@@ -153,6 +207,28 @@
                 &lt;/div&gt;
                 &lt;div class="update-item-details"&gt;
                     &lt;span class="update-item-content"&gt;
+                                                    &lt;a href="/confluence/display/GCCAS/2018/07/03/ert" title="GCCA Squad"&gt;ert&lt;/a&gt;
+                                            &lt;/span&gt;
+                    &lt;span class="update-item-date"&gt;created less than a minute ago&lt;/span&gt;
+                                                                            &lt;/div&gt;
+            &lt;/li&gt;
+                        &lt;li class="update-item"&gt;
+                &lt;div class="update-item-icon"&gt;
+                    &lt;span class="icon content-type-blogpost"&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="update-item-details"&gt;
+                    &lt;span class="update-item-content"&gt;
+                                                    &lt;a href="/confluence/display/GCCAS/2018/07/03/sdf" title="GCCA Squad"&gt;sdf&lt;/a&gt;
+                                            &lt;/span&gt;
+                    &lt;span class="update-item-date"&gt;created 34 minutes ago&lt;/span&gt;
+                                                                            &lt;/div&gt;
+            &lt;/li&gt;
+                        &lt;li class="update-item"&gt;
+                &lt;div class="update-item-icon"&gt;
+                    &lt;span class="icon content-type-blogpost"&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="update-item-details"&gt;
+                    &lt;span class="update-item-content"&gt;
                                                     &lt;a href="/confluence/display/GCCAS/2018/06/28/345" title="GCCA Squad"&gt;345&lt;/a&gt;
                                             &lt;/span&gt;
                     &lt;span class="update-item-date"&gt;created Jun 28, 2018&lt;/span&gt;
@@ -182,26 +258,11 @@
             &lt;/li&gt;
                     &lt;/ul&gt;
     &lt;/li&gt;
-        &lt;li class="grouping"&gt;
-                &lt;div class="update-item-profile"&gt;
-            &lt;a class="confluence-userlink url fn" data-username="vmali33" href=""&gt;&lt;img class="userLogo logo" src="/confluence/s/en_GB/6220/de9b463eb65c5ca13c0266eed77e2bf49f4c6fe8.2/_/images/icons/profilepics/default.png" alt="" title="vmali33"&gt;&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;ul class="update-items"&gt;
-            &lt;div&gt;&lt;a class="confluence-userlink url fn" data-username="vmali33" href="/confluence/display/~vmali33"&gt;Vijender Reddy Mali&lt;/a&gt;&lt;/div&gt;
-                        &lt;li class="update-item"&gt;
-                &lt;div class="update-item-icon"&gt;
-                    &lt;span class="icon content-type-page"&gt;&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="update-item-details"&gt;
-                    &lt;span class="update-item-content"&gt;
-                                                    &lt;a href="/confluence/display/GCCAS/GCCA+Squad+Home" title="GCCA Squad"&gt;GCCA Squad Home&lt;/a&gt;
-                                            &lt;/span&gt;
-                    &lt;span class="update-item-date"&gt;created Jun 28, 2018&lt;/span&gt;
-                                                                            &lt;/div&gt;
-            &lt;/li&gt;
-                    &lt;/ul&gt;
-    &lt;/li&gt;
     &lt;/ul&gt;
+&lt;div class="more-link-container"&gt;
+    &lt;a class="more-link" href="/confluence/plugins/recently-updated/changes.action?theme=social&amp;amp;pageSize=5&amp;amp;startIndex=5&amp;amp;searchToken=1734069&amp;amp;spaceKeys=GCCAS&amp;amp;contentType=page, comment, blogpost"&gt;Show More&lt;/a&gt;
+    &lt;img class="waiting-image" alt="Please wait" src="/confluence/s/en_GB/6220/de9b463eb65c5ca13c0266eed77e2bf49f4c6fe8.2/_/images/icons/wait.gif"&gt;
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
